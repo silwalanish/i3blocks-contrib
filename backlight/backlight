@@ -38,4 +38,5 @@ esac
 
 
 BRIGHTNESS=$(xbacklight -get)
+BRIGHTNESS=${BRIGHTNESS/\.*}
 echo "${BRIGHTNESS}%"
